@@ -23,3 +23,5 @@ joueur2.jouerGobelet(gobelet);
 joueur2.afficheScore;
 const partie = new partie_1.Partie(2, 2);
 partie.initialiser(tabjoueur);
+partie.lancer(2);
+partie.afficherGagnant();

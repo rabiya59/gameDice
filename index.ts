@@ -9,8 +9,6 @@ const lanceDee = new DEE ()
 //console.log(lanceDee.get_value());
 
 
-
-
 const gobelet = new Gobelet(2)
 gobelet.lancer()
 gobelet.getValeur()
@@ -32,6 +30,8 @@ joueur2.afficheScore
 
 const partie = new Partie(2,2)
 partie.initialiser(tabjoueur)
+partie.lancer(2)
+partie.afficherGagnant()
 
 
 

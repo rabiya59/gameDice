@@ -39,7 +39,7 @@ export class Joueur {
         return this._score
     }
 
-    jouerGobelet(gobelet: Gobelet):void {
+    jouerGobelet(gobelet: Gobelet): void {
 
         gobelet.lancer();
         let score = gobelet.getValeur()
@@ -47,8 +47,8 @@ export class Joueur {
     }
 
     afficheScore() {
-    console.log("Score :" + this.nom + this._score);
-    
+        console.log("Score :" + this.nom + this._score);
+
     }
 
 }

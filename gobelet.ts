@@ -10,8 +10,7 @@ export class Gobelet {
 
     constructor(nbr_des: number) {
         this._valeurlancergobelet = 0;
-        //nbr_des = 2
-        // On ajoute au tableau 2 dés
+
         for (let i = 0; i < nbr_des; i++) {
             this._tabDee.push(new DEE());
         }
@@ -22,17 +21,19 @@ export class Gobelet {
         return this._valeurlancergobelet
 
     }
+
     lancer() {
         this._valeurlancergobelet = 0;
 
+
+        /*  */
         for (let i = 0; i < this._tabDee.length; i++) {
 
             this._tabDee[i].lancer()
 
-            console.log('valeur tableau'+this._tabDee[i].get_value());
+            console.log('valeur tableau' + this._tabDee[i].get_value());
             this._valeurlancergobelet += this._tabDee[i].get_value()
         }
-        // console.log(this._valeurlancergobelet);
     }
 
     afficheScore() {
